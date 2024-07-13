@@ -1,9 +1,11 @@
 import { Config } from "./src/config";
 
 export const defaultConfig: Config = {
-  url: "https://www.builder.io/c/docs/developers",
-  match: "https://www.builder.io/c/docs/**",
-  maxPagesToCrawl: 50,
-  outputFileName: "output.json",
-  maxTokens: 2000000,
+  url: "https://docs.dify.ai/getting-started/cloud",
+  match: "https://docs.dify.ai/getting-started/**",
+  selector: "main",
+  maxPagesToCrawl: 300,
+  outputFileName: "dify-gettingstarted.json",
+  maxTokens: 100000000,
 };
+
